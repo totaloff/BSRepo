@@ -1,0 +1,11 @@
+[11-Sep-2017 18:18:21 UTC] PHP Notice:  Undefined variable: test_version in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 114
+[11-Sep-2017 18:18:21 UTC] PHP Notice:  Undefined variable: only_active in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 115
+[11-Sep-2017 18:19:21 UTC] PHP Fatal error:  Maximum execution time of 55 seconds exceeded in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/vendor/squizlabs/php_codesniffer/CodeSniffer/File.php on line 3330
+[11-Sep-2017 18:19:26 UTC] PHP Notice:  Undefined variable: test_version in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 114
+[11-Sep-2017 18:19:26 UTC] PHP Notice:  Undefined variable: only_active in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 115
+[11-Sep-2017 18:20:31 UTC] PHP Notice:  Undefined variable: test_version in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 114
+[11-Sep-2017 18:20:31 UTC] PHP Notice:  Undefined variable: only_active in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 115
+[11-Sep-2017 18:20:31 UTC] PHP Fatal error:  Maximum execution time of 55 seconds exceeded in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/vendor/squizlabs/php_codesniffer/CodeSniffer/File.php on line 1712
+[11-Sep-2017 18:21:33 UTC] PHP Fatal error:  Maximum execution time of 55 seconds exceeded in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/vendor/squizlabs/php_codesniffer/CodeSniffer/File.php on line 535
+[11-Sep-2017 18:21:34 UTC] PHP Notice:  Undefined variable: test_version in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 114
+[11-Sep-2017 18:21:34 UTC] PHP Notice:  Undefined variable: only_active in /home/sxqucjw0/public_html/brain/wp-content/plugins/php-compatibility-checker/wpengine-phpcompat.php on line 115

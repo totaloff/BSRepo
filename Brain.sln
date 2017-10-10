@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Brain", "Brain.phpproj", "{E9B0BAB8-4A91-4DDB-A38C-55D8209A67C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B0BAB8-4A91-4DDB-A38C-55D8209A67C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B0BAB8-4A91-4DDB-A38C-55D8209A67C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9289EFE-C240-458E-8DDC-01C96DB2BD93}
+	EndGlobalSection
+EndGlobal
