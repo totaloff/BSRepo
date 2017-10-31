@@ -67,9 +67,11 @@ abstract class PhoenixTeam_Utils {
                 $woo_title = ob_get_clean();
             }
         }
+               
 
-            echo '<div class="col-lg-6 pull-right"><div class="page-in-bread">';
-            echo wp_kses_post($sign) . '<a href="'. esc_url($homeLink) .'" title="'. __('Home Page', THEME_SLUG) .'">'. esc_html($home) .'</a> ' . esc_html($delimiter) . ' ';
+            echo '<div class="col-lg-9 pull-left"><div class="page-in-bread">';
+            //echo wp_kses_post($sign) . '<a href="'. esc_url($homeLink) .'" title="'. __('Home Page', THEME_SLUG) .'">'. esc_html($home) .'</a> ' . esc_html($delimiter) . ' ';
+            echo '<a href="'. esc_url($homeLink) .'" title="'. __('Home Page', THEME_SLUG) .'">'. esc_html($home) .'</a> ' . esc_html($delimiter) . ' ';
 
             $posts_page = self::check_posts_page();
             if ($posts_page && $pagename == $posts_page->post_name) {

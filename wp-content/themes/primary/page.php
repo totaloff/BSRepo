@@ -10,39 +10,39 @@
 ?>
 
 <?php
-    if (have_posts()) {
-        while(have_posts()) {
-            the_post();
+	if (have_posts()) {
+		while(have_posts()) {
+			the_post();
 
-            $PHTpage_subtitle  =   rwmb_meta(THEME_SLUG . '_subtitle');
-            $PHTpage_crumbs    =   rwmb_meta(THEME_SLUG . '_page_breadcrumbs');
-            $PHTpage_layout    =   rwmb_meta(THEME_SLUG . '_page_layout');
-            $PHTpage_area      =   rwmb_meta(THEME_SLUG . '_page_widgets_area');
+			$PHTpage_subtitle  =   rwmb_meta(THEME_SLUG . '_subtitle');
+			$PHTpage_crumbs    =   rwmb_meta(THEME_SLUG . '_page_breadcrumbs');
+			$PHTpage_layout    =   rwmb_meta(THEME_SLUG . '_page_layout');
+			$PHTpage_area      =   rwmb_meta(THEME_SLUG . '_page_widgets_area');
 
-            if ($PHTpage_layout && $PHTpage_layout != $PHTsidebar_pos)
-                $PHTsidebar_pos = $PHTpage_layout;
+			if ($PHTpage_layout && $PHTpage_layout != $PHTsidebar_pos)
+				$PHTsidebar_pos = $PHTpage_layout;
 
-            if ($PHTpage_area && $PHTpage_area != $PHTsidebar_area)
-                $PHTsidebar_area = $PHTpage_area;
+			if ($PHTpage_area && $PHTpage_area != $PHTsidebar_area)
+				$PHTsidebar_area = $PHTpage_area;
 ?>
-            <div class="page-in"><div>
+			<div class="page-in"><div>
 
 			  <div class="container">
-			    <div class="row">
+				<div class="row">
 
-			      <div class="col-lg-6 pull-left">
-			      	<div class="page-in-name">
+				  <div class="col-lg-6 pull-left">
+					<div class="page-in-name">
 <?php
-			      		echo "<h1>";
-                    the_title();
+						echo "<h1>";
+					the_title();
 
-                if ($PHTpage_subtitle)
-                  echo ': <span>'. esc_html( $PHTpage_subtitle ) .'</span>';
+				if ($PHTpage_subtitle)
+				  echo ': <span>'. esc_html( $PHTpage_subtitle ) .'</span>';
 
-                echo "</h1>";
+				echo "</h1>";
 ?>
-			      	</div>
-			      </div>
+					</div>
+				  </div>
 <?php
 				if ($PHTgen_crumbs && !$PHTpage_crumbs || $PHTgen_crumbs && $PHTpage_crumbs === '-1') :
 
@@ -56,32 +56,32 @@
 ?>
 					<!-- Breadcrumbs turned off -->
 <?php
-		    	endif;
+				endif;
 ?>
-			    </div>
+				</div>
 			  </div>
-            </div>
+			</div>
 		</div>
 
 			<section id="page-<?php the_ID(); ?>" <?php post_class('marg50 container general-font-area phoenixteam-sidebar-'. $PHTsidebar_pos); ?>>
 				<div class="row">
 <?php
-                if ($PHTsidebar_pos == 'no') {
-                    echo '<div class="col-lg-12">' . "\n";
-                } elseif ($PHTsidebar_pos == 'right') {
-                	echo '<div class="row">' . "\n";
-                    echo '<div class="col-lg-9">' . "\n";
-                } elseif ($PHTsidebar_pos == 'left') {
+				if ($PHTsidebar_pos == 'no') {
+					echo '<div class="col-lg-12">' . "\n";
+				} elseif ($PHTsidebar_pos == 'right') {
+					echo '<div class="row">' . "\n";
+					echo '<div class="col-lg-9">' . "\n";
+				} elseif ($PHTsidebar_pos == 'left') {
 ?>
 					<!-- sidebar -->
-                	<div class="row">
-                    <div class="col-lg-3">
-                        <?php dynamic_sidebar($PHTsidebar_area); ?>
-                    </div><!-- sidebar end-->
+					<div class="row">
+					<div class="col-lg-3">
+						<?php dynamic_sidebar($PHTsidebar_area); ?>
+					</div><!-- sidebar end-->
 
-                    <div class="col-lg-9">
+					<div class="col-lg-9">
 <?php
-                }
+				}
 
 				the_content();
 

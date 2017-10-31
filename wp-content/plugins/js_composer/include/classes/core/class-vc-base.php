@@ -84,11 +84,7 @@ class Vc_Base {
 		add_filter( 'the_excerpt', array(
 			$this,
 			'excerptFilter',
-		) );
-		add_action( 'wp_head', array(
-			$this,
-			'addMetaData',
-		) );
+		) );		
 		add_action( 'wp_head', array(
 			$this,
 			'addIEMinimalSupport',

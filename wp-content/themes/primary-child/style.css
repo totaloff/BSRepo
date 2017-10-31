@@ -16,55 +16,117 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 @import url("../primary/style.css");
 
 .top-header {
-    background: #006aac;
-    padding: 3px 10px;
+	background: #006aac;
+	padding: 6px 10px;
+}
+
+#nav-container nav.sticky {
+	background: rgba(255, 255, 255, 1) !important
 }
 
 .menu ul li a,
 nav.sticky ul li a {
-    padding: 28px 8px;
+	padding: 28px 8px;
 }
 
 body {
-    color: #747474;
-    font: 12px Tahoma,Arial,Helvetica,sans-serif;
-    background: url(images/body_bg.png) top center repeat-x;
+	color: #747474;
+	font: 12px Tahoma,Arial,Helvetica,sans-serif;
 }
 
 .logo {
-    margin: 10px 0;
+	margin: 10px 0;
 }
 
 .menu-top-menu-container {
-    float: right
+	float: right
 }
 
-    .menu-top-menu-container ul {
-        margin: 0px
-    }
+	.menu-top-menu-container ul {
+		margin: 0px
+	}
 
-        .menu-top-menu-container ul li {
-            float: left;
-            padding-left: 5px;
-            list-style: none;
-        }
+		.menu-top-menu-container ul li {
+			float: left;
+			padding-left: 5px;
+			list-style: none;
+		}
 
-            .menu-top-menu-container ul li a {
-                font-size: 12px;
-                font-weight: 300;
-                text-decoration: none;
-                color: #fff;
-            }
+			.menu-top-menu-container ul li a {
+				font-size: 12px;
+				font-weight: 300;
+				text-decoration: none;
+				color: #fff;
+			}
 
-                .menu-top-menu-container ul li a:hover {
-                    text-decoration: underline
-                }
+				.menu-top-menu-container ul li a:hover {
+					text-decoration: underline
+				}
 
-    .menu-top-menu-container li:after {
-        content: " "
-    }
+	.menu-top-menu-container li:after {
+		content: " "
+	}
 
 .top_menu li:not(:last-of-type):after {
-    padding-left: 5px;
-    content: "|";
+	padding-left: 5px;
+	content: "|";
+}
+
+.page-in {
+	line-height: 1.75;
+}
+.page-in-bread {
+	float: none;
+	 line-height: 20px;
+	padding-top: 50px;
+}
+
+.service-name,
+.promo-text {
+  font-family: Roboto, sans-serif;
+}
+
+.about-us {
+	background: #fff;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.widget ul li > a:before {
+	padding-left: 20px;
+}
+
+.widget ul li.current-menu-item,
+.widget ul li:hover{
+	background:#006aac;
+}
+
+	.widget ul li.current-menu-item > a:before,
+	.widget ul li.current-menu-item > a,
+	.widget ul li:hover a	{
+		color: #fff;
+	}
+.phoenixteam-left-page-layout {
+	border-left: 1px solid #eee;
+}
+.partners .promo-text {
+	font-size: 14px;
+}
+
+.partners .wpb_wrapper .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.icon-basket:before {
+	content: "\e116";
+}
+
+.icon-basket {
+	font-family: 'Glyphicons Halflings';
+	color: #444;
+}
+
+.cartcontents {
+	background: none;
 }

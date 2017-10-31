@@ -284,9 +284,9 @@ class PhoenixTeam_Shortcodes extends WPBakeryShortCode {
             if (is_array($pic) && count($pic)) {
                 $pic = array_shift($pic);
                 $pic = $pic['full_url'];
-                $pic = '<img data-no-retina="1" src="'.$pic.'" alt="'.$title.'">';
+                $pic = '<img data-no-retina="1" class="center-block img-responsive" src="'.$pic.'" alt="'.$title.'">';
             } else {
-                $pic = '<img data-no-retina="1" src="'.THEME_URI . '/assets/images/nopicture.png" alt="'.$title.'">';
+                $pic = '<img data-no-retina="1" class="center-block img-responsive" src="'.THEME_URI . '/assets/images/nopicture.png" alt="'.$title.'">';
             }
 
             $about = rwmb_meta(THEME_SLUG . '_team_member_text', null, $id);

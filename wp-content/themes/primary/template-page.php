@@ -32,7 +32,8 @@
             <div class="page-in"><div>
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-6 pull-left">
+                <div class="col-lg-3"></div>
+                  <div class="col-lg-9 pull-left">
 <?php
                 if ($PHTgen_crumbs && $PHTpage_crumbs !== '0' || $PHTgen_crumbs && $PHTpage_crumbs === '-1') :
 

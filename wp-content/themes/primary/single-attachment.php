@@ -71,9 +71,7 @@ if (have_posts()) :
                         <a href="<?php echo esc_url($PHTpermalink); ?>"><?php the_title(); ?></a>
                     </div >
                     <div class="cl-blog-detail">
-                        <?php the_time('j F Y'); ?> - <?php the_time('G:i'); ?>,
-                        <?php _e('by', THEME_SLUG); ?> <?php the_author_posts_link(); ?>,
-                        <?php _e('in', THEME_SLUG); ?> <?php the_category(', '); ?>, <?php comments_popup_link( __('No comments', THEME_SLUG), __('1 comment', THEME_SLUG), __( '% comments', THEME_SLUG), null, __('Comments off', THEME_SLUG) ); ?>
+                        <?php the_time('j F Y'); ?> 
                     </div>
 
                     <div class="cl-blog-text">

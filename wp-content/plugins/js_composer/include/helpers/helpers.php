@@ -555,7 +555,6 @@ if ( ! function_exists( 'wpb_debug' ) ) {
  * @return array
  */
 function js_composer_body_class( $classes ) {
-	$classes[] = 'wpb-js-composer js-comp-ver-' . WPB_VC_VERSION;
 	$disable_responsive = vc_settings()->get( 'not_responsive_css' );
 	if ( '1' !== $disable_responsive ) {
 		$classes[] = 'vc_responsive';
